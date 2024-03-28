@@ -1,0 +1,100 @@
+Para gerar um ssh digitar github ssh no google, depois ir em gerar um nova SSH...
+copiar a chave
+Digitar a chave SSH no Git Bash Here
+Depois ir no git hub em: https://github.com/settings/keys
+Procurar "SSH Keys" e adicionar nova ssh
+
+***********************************************************************************
+
+comando essenciais:
+git init // inicializa a pasta para ser armazenada no git
+git add . // adiciona TODOS os arquivos e pastas no gi
+git commit -m "Projeto 1 Aprendizado C#" // salvando a versão no repositório git
+git push
+
+***********************************************************************************
+
+Explicando melhor:
+
+botao direito do mouse na pasta do projeto e clicar em "git bash here"
+
+digitar os seguintes comandos
+
+git init // inicializa a pasta para ser armazenada no git
+
+git add . // adiciona todos os arquivos e pastas no git
+
+git commit -m "Projeto 1 Aprendizado C#" // salvando a versão no repositório git
+
+
+git branch -M main
+
+ir no site do github e dar um new apontando para o projeto
+
+clicar em ssh no site e copiar a linha abaixo do site e colar no git bash here
+
+git remote add origin git@github.com:lurmachado/AprendendoC-1.git
+
+git push -u origin main // comando que envia o projeto para o github. A primeira vez precisa terminar com "-u origin main", depois não
+
+
+Depois que modificar qualquer arquivo commitado dar o seguinte comando abaixo:
+git status // usado para visualizar se tem algum arquivo por commitar
+
+dar novamente os comandos abaixo:
+git add .
+git push
+
+
+// git clone // mais o caminho pego no github serve para copiar o projeto para uma pasta local
+// git log --oneline // o -- oneline traz o log de forma reduzida
+
+Observações:
+* Depois de alterar algum arquivo e der o git add . eu posso voltar ao estado anterior dando os seguintes comandos:
+git reset
+git clean -df
+git checkout -- .
+
+*** Voltando alterações **********************
+*Como voltar um commit sem apagar as alterações
+git reset --soft HEAD~1
+
+* Como voltar um commit e também as modificações nos arquivos
+git reset --hard <codigo do commit>
+
+* Se eu quiser subir apenas determinado arquivo eu do o comando:
+git add <nome do arquivo>
+
+* Como atualizar o repositorio local em relacao ao remoto
+git pull origin main
+git pull <nome do remote> <nome do branch>
+
+*** Voltando alterações **********************
+
+* git diff nomedoarquivo // mostra as diferenças das versões
+
+* git checkout numerodocommit // volta o projeto no numero do commit referenciado
+
+* git checkout HEAD~1 // volta 1 commit antes do último, pode ser ~2 ou ~3... 
+
+* git checkout main // volta ao ultimo
+
+* .gitignore // arquivos que não devem ser salvos no projeto
+* touch .gitignore // criar um arquivo gitignore
+
+ - procurar no google um exemplo desse arquivo a colocar ele na pasta do projeto e tbm nas subpastas
+
+//****************
+
+* git push -f // força o envio do commit local para o remoto, ignorando qualquer conflito que possa dar
+
+* git remote -v // ver para onde meu projeto está apontando no github
+para mudar esse caminho dar o comando abaixo:
+* git remote set-url origin <caminho git novo>
+
+
+
+
+
+
+
