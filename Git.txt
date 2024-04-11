@@ -97,6 +97,12 @@ git pull <nome do remote> <nome do branch>
 para mudar esse caminho dar o comando abaixo:
 * git remote set-url origin <caminho git novo>
 
+****
+
+Clonar um branch para a maquina local
+git clone --branch <branchname> <remote-repo-url>
+
+
 
 
 
